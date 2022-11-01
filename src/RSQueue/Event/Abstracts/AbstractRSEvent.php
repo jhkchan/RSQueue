@@ -18,7 +18,7 @@ declare(strict_types=1);
 namespace RSQueue\Event\Abstracts;
 
 use Redis;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Abstract event.
