@@ -64,8 +64,8 @@ class Producer extends AbstractService
         $this
             ->eventDispatcher
             ->dispatch(
-                RSQueueEvents::RSQUEUE_PRODUCER,
-                $producerEvent
+                $producerEvent,
+                RSQueueEvents::RSQUEUE_PRODUCER
             );
 
         return $this;

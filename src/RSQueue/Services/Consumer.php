@@ -80,7 +80,7 @@ class Consumer extends AbstractService
 
         $this
             ->eventDispatcher
-            ->dispatch(RSQueueEvents::RSQUEUE_CONSUMER, $consumerEvent);
+            ->dispatch($consumerEvent, RSQueueEvents::RSQUEUE_CONSUMER);
 
         return [$givenQueueAlias, $payload];
     }

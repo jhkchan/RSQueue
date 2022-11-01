@@ -64,8 +64,8 @@ class Publisher extends AbstractService
         $this
             ->eventDispatcher
             ->dispatch(
-                RSQueueEvents::RSQUEUE_PUBLISHER,
-                $publisherEvent
+                $publisherEvent,
+                RSQueueEvents::RSQUEUE_PUBLISHER
             );
 
         return $this;

@@ -166,8 +166,8 @@ abstract class SubscriberCommand extends AbstractRSQueueCommand
                     $this
                     ->eventDispatcher
                     ->dispatch(
-                        RSQueueEvents::RSQUEUE_SUBSCRIBER,
-                        $subscriberEvent
+                        $subscriberEvent,
+                        RSQueueEvents::RSQUEUE_SUBSCRIBER
                     );
 
                     /*
